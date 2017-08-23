@@ -3,6 +3,21 @@ html {
     overflow-x: hidden;
     background-color: white;
 }
+
+.logo {
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#logo {
+    width: 50%;
+}
+.panel {
+    position: relative;
+}
 .panel-default {
     border: 0px;
     margin: 0px;
@@ -21,15 +36,8 @@ html {
 .projects-column {
     overflow-y: scroll;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
-}
-.panel-group {
-   
-    
+    position: relative;
 }
 
 .projects {
