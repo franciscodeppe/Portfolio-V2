@@ -9,29 +9,81 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>FD Design House</title>
 </head>
 
 <body>
     <div class="col-lg-3 col-xs-3 projects-column">
-        <div class="project-title">
-            <h2>Work:</h2>
-        </div>
-        <div class="projects">
-            <div class="project-holder">
-                <a href="#"><img class="project" src="assets/media/giphy.PNG" alt=""></a>
-            </div>
-            <div class="project-holder">
-                <a href="#"><img class="project" src="assets/media/thelatest.PNG" alt=""></a>
-            </div>
-            <div class="project-holder">
-                <a href="#"><img class="project" src="assets/media/armetdavis.PNG" alt=""></a>
-            </div>
-            <div class="project-holder">
-                <a href="#"><img class="project" src="assets/media/SocialModelsBackground.jpg" alt=""></a>
-            </div>
-            <div class="project-holder">
-                <a href="#"><img class="project" src="assets/media/AtoZvers2.gif" alt=""></a>
+        <div class="row">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                          About</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <div class="about-container">
+                                <div class="about-img">
+                                    <img class="profile-pic" src="assets/media/Headshot.jpg" alt="">
+                                </div>
+                                <div>
+                                    <p class="lead">Francisco Deppe is a Multi-Media designer and junior web-developer, intent on honing
+                                        his creative and artistic skills. Francisco is currently involved in a Full-Stack
+                                        Web-Development Bootcamp and is ready to apply his knowledge to your next project.
+                                        Past experience includes a B.S. in Finance from California State University, many
+                                        years as an IT and office administrator, work as a print graphic designer and time
+                                        spent touring Los Angeles as a musician.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                          Work</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="projects">
+                                <div class="project-holder">
+                                    <a href="#"><img class="project" src="assets/media/giphy.PNG" alt=""></a>
+                                </div>
+                                <div class="project-holder">
+                                    <a href="#"><img class="project" src="assets/media/thelatest.PNG" alt=""></a>
+                                </div>
+                                <div class="project-holder">
+                                    <a href="#"><img class="project" src="assets/media/armetdavis.PNG" alt=""></a>
+                                </div>
+                                <div class="project-holder">
+                                    <a href="#"><img class="project" src="assets/media/SocialModelsBackground.jpg" alt=""></a>
+                                </div>
+                                <div class="project-holder">
+                                    <a href="#"><img class="project" src="assets/media/AtoZvers2.gif" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                          Contact</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -39,23 +91,9 @@
         <div class="about-video">
             <video muted autoplay loop src="assets/media/two.mp4" id="about-video"></video>
         </div>
-        <div class="about-container">
-            <div class="about-img">
-                <img class="profile-pic" src="assets/media/Headshot.jpg" alt="">
-            </div>
-            <div>
-                <p class="lead">Francisco Deppe is a Multi-Media designer and junior web-developer, intent on honing his creative and artistic
-                    skills. Francisco is currently involved in a Full-Stack Web-Development Bootcamp and is ready to apply
-                    his knowledge to your next project. Past experience includes a B.S. in Finance from California State
-                    University, many years as an IT and office administrator, work as a print graphic designer and time spent
-                    touring Los Angeles as a musician.
-                </p>
-
-                <p id="quote">“Creativity is to discover a question that has never been asked. If one brings up an idiosyncratic question,
-                    the answer he gives will necessarily be unique as well.” <br>-Kenya Hara </p>
-            </div>
-        </div>
+        <h3 id="quote">“Creativity is to discover a question that has never been asked. If one brings up an idiosyncratic question, the
+            answer he gives will necessarily be unique as well.” <br>-Kenya Hara </h3>
     </div>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
 </body>
-
 </html>
