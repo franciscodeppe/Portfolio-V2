@@ -3,7 +3,9 @@ html {
     overflow-x: hidden;
     background-color: white;
 }
-
+.row {
+  margin: 0px;
+}
 .logo {
     width: 100%;
     margin: 0px auto;
@@ -11,10 +13,9 @@ html {
     color: black;
     text-align: center;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
-.row {
-    margin: 0px;
-}
+
 #logo {
     width: 50%;
 }

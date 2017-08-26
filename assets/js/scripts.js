@@ -1,4 +1,2 @@
-$("#accordion").accordion({
-    collapsible: true,
-    active: false
-});
+// $(".collapse").collapse();
+// $('#accordion').collapse("hide");
