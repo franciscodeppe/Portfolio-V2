@@ -125,7 +125,7 @@ function uniqueID() {
 uniqueID();
 
 function addColor() {
-    var cubeColors = ["red", "green", "blue", "orange", "white", "yellow"];
+    var cubeColors = ["#8A8A8A", "#3E5466", "#29CCBE", "#D2745F", "#FFF9E5", "#FF211A"];
     var red = 0;
     var blue = 0;
     var green = 0;
@@ -146,63 +146,63 @@ function addColor() {
 
         if (red === 9) {
             // console.log("red");
-            var here = cubeColors.indexOf("red");
+            var here = cubeColors.indexOf("#8A8A8A");
             cubeColors.splice(here, 1);
             red = -1
         }
         if (green === 9) {
             // console.log("green");
-            var here = cubeColors.indexOf("green");
+            var here = cubeColors.indexOf("#3E5466");
             cubeColors.splice(here, 1);
             green = -1
         }
         if (blue === 9) {
             // console.log("blue");
-            var here = cubeColors.indexOf("blue");
+            var here = cubeColors.indexOf("#29CCBE");
             cubeColors.splice(here, 1);
             blue = -1
         }
         if (orange === 9) {
             // console.log("orange");
-            var here = cubeColors.indexOf("orange");
+            var here = cubeColors.indexOf("#D2745F");
             cubeColors.splice(here, 1);
             orange = -1
         }
         if (yellow === 9) {
             // console.log("yellow");
-            var here = cubeColors.indexOf("yellow");
+            var here = cubeColors.indexOf("#FFF9E5");
             cubeColors.splice(here, 1);
             yellow = -1
         }
         if (white === 9) {
             // console.log("white");
-            var here = cubeColors.indexOf("white");
+            var here = cubeColors.indexOf("#FF211A");
             cubeColors.splice(here, 1);
             white = -1
         }
 
         switch (color) {
-            case "red":
+            case "#8A8A8A":
                 red++;
                 // console.log(red)
                 break;
-            case "green":
+            case "#3E5466":
                 green++;
                 // console.log(green)
                 break;
-            case "blue":
+            case "#29CCBE":
                 blue++;
                 // console.log(blue)
                 break;
-            case "orange":
+            case "#D2745F":
                 orange++;
                 // console.log(orange)
                 break;
-            case "white":
+            case "#FF211A":
                 white++;
                 // console.log(white)
                 break;
-            case "yellow":
+            case "#FFF9E5":
                 yellow++;
                 // console.log(yellow)
                 break;
