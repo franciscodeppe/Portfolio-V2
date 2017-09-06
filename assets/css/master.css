@@ -1,27 +1,51 @@
+/* Font Families:
+font-family: 'Monoton', cursive;
+font-family: 'Text Me One', sans-serif;
+ */
 body,
 html {
   color: #444;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Text Me One', sans-serif;;
   background-color: #F6F9F7;
   overflow-x: hidden;
 }
 
 .row {
-  position: relative;
   margin-top: 20px;
+}
+.nav-column {
+  padding-left: 30px;
+}
+.nav>a {
+  margin: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #222;
+}
+hr {
+  margin: -2px;
+  height: 1px;
+  background-color: #444;
+  width: 0px;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-column>p {
+  font-size: 15px;
+  margin: -1px;
 }
 
 .logo {
   width: 100%;
-  margin: 0px auto;
-  padding: 20px;
-  text-align: center;
+  font-family: 'Monoton', cursive;
+  font-size: 20px;
   margin-bottom: 25px;
   margin-top: 10px;
 }
 
 #logo {
   width: 50%;
+  min-width: 80px;
 }
 
 .about-img {
@@ -33,16 +57,6 @@ html {
   border-radius: 50%;
   height: 150px;
   float: left;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.2;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.right-column {
 }
 
 .icons {

@@ -7,8 +7,10 @@
 }
 
 .project-container {
-    height: 375px;
-    width: 300px;
+    max-height: 375px;
+    max-width: 300px;
+    min-height: 275px;
+    min-width: 200px;
     margin: 20px;
     background-color: #FFF8F9;
     border-radius: 2px;
