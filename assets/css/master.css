@@ -54,6 +54,7 @@ a>hr {
   position: relative;
   font-size: 1.8em !important;
   letter-spacing: .2em;
+  color: white;
 }
 i:hover {
   color: #D2745F;
@@ -61,6 +62,13 @@ i:hover {
 
 .bottom-info {
   background-color: #444;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 
