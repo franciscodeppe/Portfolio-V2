@@ -1,9 +1,8 @@
 .projects {
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 .project-container {
@@ -12,13 +11,14 @@
     min-height: 275px;
     min-width: 200px;
     margin: 20px;
-    background-color: #FFF8F9;
+    background-color: #222;
+    color: white;
     border-radius: 2px;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   }
   .project-container:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 10px 10px gray;
+    box-shadow: 0px 10px 10px #444;
   }
   .project-img {
     height: 70%;
