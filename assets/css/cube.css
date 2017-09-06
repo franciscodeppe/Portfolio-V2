@@ -4,6 +4,7 @@
     float: left;
     margin-left: 40px;
     z-index: 10;
+    position: relative;
   }
   
   .cube {
