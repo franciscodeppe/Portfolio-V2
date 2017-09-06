@@ -80,12 +80,12 @@ i:hover {
   height: 100px;
   background-color: #222;
   position: relative;
-  text-align: center;
 }
 .return-div>button {
   width: 55px;
   height: 55px;
   margin-top: 20px;
+  margin-left: 80px;
   border-radius: 50%;
   border: 1px solid white;
   background-color: #444;
