@@ -129,11 +129,7 @@ table {
   font-family: 'Rokkitt', serif;
   width: 100%;
 }
-table> td {
-  width: 40px;
 
-
-}
 hr {
   background-color: #444;
   height: 1px;
