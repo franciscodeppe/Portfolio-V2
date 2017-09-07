@@ -1,17 +1,18 @@
 /* Font Families:
 font-family: 'Monoton', cursive;
-font-family: 'Text Me One', sans-serif;
+font-family: 'Rokkitt', serif;
+font-family: 'Sanchez', serif;
+font-family: 'Cutive Mono', monospace;
  */
 body,
 html {
   color: #444;
-  font-family: 'Text Me One', sans-serif;;
+  font-family: 'Cutive Mono', monospace;
   background: url("../media/concrete_seamless.png");
   background-repeat: repeat;
   overflow-x: hidden;
   height: 100%;
 }
-
 .nav-column {
   padding-left: 30px;
 }
@@ -34,7 +35,7 @@ a>hr {
   margin: -1px;
 }
 
-.logo {
+.logo-title {
   width: 100%;
   font-family: 'Monoton', cursive;
   font-size: 20px;
@@ -42,7 +43,7 @@ a>hr {
   margin-top: 10px;
 }
 
-#logo {
+#logo-title {
   width: 50%;
   min-width: 80px;
 }
@@ -110,8 +111,8 @@ i:hover {
   margin: 25px;
 }
 .name-pic-div>h1 {
-  font-weight: 50px;
   margin-bottom: -15px;
+  font-size: 2.5em;
 }
 .name-pic-div>h3 {
   font-size: 20px;
@@ -122,7 +123,16 @@ i:hover {
 }
 
 .bio-paragraph {
-  clear: both;
+  font-family: 'Rokkitt', serif;
+}
+table {
+  font-family: 'Rokkitt', serif;
+  width: 100%;
+}
+table> td {
+  width: 40px;
+
+
 }
 hr {
   background-color: #444;
