@@ -196,12 +196,12 @@ $(document).ready(function (event) {
 
 
     // Project Hover - transition and link
-    $(".item").on("mouseenter", function () {
+    $(document).on("mouseenter", ".item", function () {
         $(this).find("div.more-info").animate({
             "height": "60px",
         }, "fast")
     });
-    $(".item").on("mouseleave", function () {
+    $(document).on("mouseleave", ".item", function () {
         $(this).find("div.more-info").animate({
             "height": "0px",
         }, "fast")
