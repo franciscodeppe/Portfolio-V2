@@ -103,10 +103,10 @@ $(work).each(function (i) {
 
 // Search through work ----------------------
 $(document).ready(function (event) {
-
+    
     $("#web-design-link").on("click", function () {
         // remove current items
-        $(".grid").fadeOut(800, function () {
+        $(".grid").fadeOut(500, function () {
             $(".grid").html("");
 
             $(work).each(function (i) {
@@ -116,11 +116,11 @@ $(document).ready(function (event) {
                 }
             })
         })
-        $(".grid").fadeIn(500)
+        $(".grid").fadeIn(300)
 
     });
     $("#logo-design-link").on("click", function () {
-        $(".grid").fadeOut(800, function () {
+        $(".grid").fadeOut(500, function () {
             $(".grid").html("");
 
             $(work).each(function (i) {
@@ -130,10 +130,10 @@ $(document).ready(function (event) {
                 }
             })
         })
-        $(".grid").fadeIn(500)
+        $(".grid").fadeIn(300)
     });
     $("#creative-link").on("click", function () {
-        $(".grid").fadeOut(800, function () {
+        $(".grid").fadeOut(500, function () {
             $(".grid").html("");
 
             $(work).each(function (i) {
@@ -143,7 +143,7 @@ $(document).ready(function (event) {
                 }
             })
         })
-        $(".grid").fadeIn(500)
+        $(".grid").fadeIn(300)
     });
     $("#all-portfolio-link").on("click", function () {
         $(".grid").fadeOut(300, function () {
@@ -199,11 +199,11 @@ $(document).ready(function (event) {
     $(document).on("mouseenter", ".item", function () {
         $(this).find("div.more-info").animate({
             "height": "60px",
-        }, "fast")
+        }, 400)
     });
     $(document).on("mouseleave", ".item", function () {
         $(this).find("div.more-info").animate({
             "height": "0px",
-        }, "fast")
+        }, 400)
     });
 })
