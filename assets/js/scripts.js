@@ -1,3 +1,9 @@
+var $grid = $('.grid').masonry({
+    columnWidth: 50,
+    horizontalOrder: true,
+});
+
+
 var work = [{
         name: "Armet-Davis",
         source: "project1-web.png",
@@ -73,64 +79,84 @@ var work = [{
     },
 ]
 
-$(work).each(function (i) {
-
-    var projectContainer =
-
-        "<div class='" + this.id + " project-container'>" +
+function projectPopulate(i) {
+    var projectContainer = "<div class='item " + work[i].id + "'>" +
         "<div class='project-img'>" +
-        "<img src='assets/media/" + this.source + "' alt=''>" +
+        "<img src='assets/media/" + work[i].source + "' alt=''>" +
         "</div>" +
+        "<a href='#'><div class='more-info'><h3>More Info</h3>" +
+        "</div></a>" +
         "<div class='project-info'>" +
-        "<h3>" + this.name + "</h3>" +
-        "<h4>" + this.type + "</h4>" +
+        "<h3>" + work[i].name + "</h3>" +
+        "<h4>" + work[i].type + "</h4>" +
         "</div>" +
         "</div>";
-    $(".projects").append(projectContainer);
+    $grid.masonry('layout');
+    $grid.append(projectContainer);
 
-    return i < 6
-});
-$("#more").click(function () {
-   
-})
-// Search through work  
+}
 
-$("#web-design-link").on("click", function () {
-    $(".projects").children().each(function () {
-        if ($(this).attr("class").search("web") === -1) {
-            $(this).fadeOut(1000).hide(50)
-        } else {
-            $(this).fadeIn().show(1000)
-        }
-    })
-});
-$("#logo-design-link").on("click", function () {
-    $(".projects").children().each(function () {
-        if ($(this).attr("class").search("logo") === -1) {
-            $(this).fadeOut(1000).hide(50)
-        } else {
-            $(this).fadeIn().show(1000)
-        }
-    })
-});
-$("#creative-link").on("click", function () {
-    $(".projects").children().each(function () {
-        if ($(this).attr("class").search("creative") === -1) {
-            $(this).fadeOut(1000).hide(50)
-        } else {
-            $(this).fadeIn().show(1000)
-        }
-    })
-});
-$("#all-portfolio-link").on("click", function () {
-    $(".projects").children().each(function () {
-        if ($(this).attr("class").search("project-container") !== -1) {
-            $(this).show(1000)
-        }
-    })
+$(work).each(function (i) {
+    projectPopulate(i)
 });
 
-$(document).ready(function () {
+
+// Search through work ----------------------
+$(document).ready(function (event) {
+
+    $("#web-design-link").on("click", function () {
+        // remove current items
+        $(".grid").fadeOut(800, function () {
+            $(".grid").html("");
+
+            $(work).each(function (i) {
+                if (this.id === "web") {
+                    projectPopulate(i)
+
+                }
+            })
+        })
+        $(".grid").fadeIn(500)
+
+    });
+    $("#logo-design-link").on("click", function () {
+        $(".grid").fadeOut(800, function () {
+            $(".grid").html("");
+
+            $(work).each(function (i) {
+                if (this.id === "logo") {
+                    projectPopulate(i)
+
+                }
+            })
+        })
+        $(".grid").fadeIn(500)
+    });
+    $("#creative-link").on("click", function () {
+        $(".grid").fadeOut(800, function () {
+            $(".grid").html("");
+
+            $(work).each(function (i) {
+                if (this.id === "creative") {
+                    projectPopulate(i)
+
+                }
+            })
+        })
+        $(".grid").fadeIn(500)
+    });
+    $("#all-portfolio-link").on("click", function () {
+        $(".grid").fadeOut(300, function () {
+            $(".grid").html("");
+
+            $(work).each(function (i) {
+                projectPopulate(i)
+
+            })
+        });
+        $(".grid").fadeIn(300)
+
+    })
 
     // page transitions
 
@@ -169,4 +195,15 @@ $(document).ready(function () {
     });
 
 
+    // Project Hover - transition and link
+    $(".item").on("mouseenter", function () {
+        $(this).find("div.more-info").animate({
+            "height": "60px",
+        }, "fast")
+    });
+    $(".item").on("mouseleave", function () {
+        $(this).find("div.more-info").animate({
+            "height": "0px",
+        }, "fast")
+    });
 })

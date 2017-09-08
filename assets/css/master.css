@@ -48,7 +48,8 @@ a>hr {
   min-width: 80px;
 }
 .right-column {
-  min-height: 100vh;
+  
+  overflow: -webkit-paged-x;
 }
 .icons {
   margin: auto;
