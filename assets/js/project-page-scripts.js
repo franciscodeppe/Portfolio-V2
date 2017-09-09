@@ -1,4 +1,4 @@
-var work = [{
+var individualWork = [{
         name: "Armet-Davis",
         source: "project1-web.png",
         type: "Web Application",
@@ -50,8 +50,9 @@ var work = [{
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
     }
 ]
+console.log(projectPageSelected)
 
-$(work).each(function (i) {
+$(individualWork).each(function (i) {
     if (work[i].name === projectPageSelected) {
 
 
@@ -94,10 +95,10 @@ $(work).each(function (i) {
             "</div>" +
             "</div>";
 
-        $(".projects").prepend(projectContainer);
+        $(".projects").apend(projectContainer);
 
 
-        $(work).each(function (i) {
+        $(individualWork).each(function (i) {
 
             var relatedWork =
                 "<div class='" + this.id + " related-project-container'>" +
