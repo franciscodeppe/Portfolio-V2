@@ -84,7 +84,7 @@ function projectPopulate(i) {
         "<div class='project-img'>" +
         "<img src='assets/media/" + work[i].source + "' alt=''>" +
         "</div>" +
-        "<a href='#'><div class='more-info'><h3>More Info</h3>" +
+        "<a href='#'><div id='" + work[i].name + "' class='more-info'><h3>More Info</h3>" +
         "</div></a>" +
         "<div class='project-info'>" +
         "<h3>" + work[i].name + "</h3>" +
@@ -205,5 +205,9 @@ $(document).ready(function (event) {
         $(this).find("div.more-info").animate({
             "height": "0px",
         }, 400)
-    });
+    });   
+})
+var projectPageSelected;
+$(document).on("click", ".more-info", function() {
+    projectPageSelectedId = $(this).attr("id")
 })

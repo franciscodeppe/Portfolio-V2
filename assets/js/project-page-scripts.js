@@ -51,65 +51,71 @@ var work = [{
     }
 ]
 
-var projectTable =
-    "<h2>stats</h2>" + "<hr>" +
-    "<table>" + "<tbody>" +
-    "<tr>" + "<td>Client</td>" +
-    "<td>" + work[0].client + "/td>" +
-    "</tr>" + "<tr>" + "<td>Category</td>" + "<td>" + work[0].id + "</td>" + "</tr>" + "</tbody>" + "</table>"
-
-
-
-var projectContainer =
-    "<div class='" + work[0].id + " project-container'>" +
-    "<div class='row'>" +
-    "<h3>" + work[0].name + "</h3>" +
-    "<p> by Francisco Deppe</p>" +
-    "</div>" +
-    "<div class='row'>" +
-    "<div class='project-img'>" +
-    "<img src='assets/media/" + work[0].source + "' alt=''>" +
-    "</div>" +
-    "</div>" +
-    "<div class='row'>" +
-    "<div class='project-info'>" +
-    "<div class='col-lg-7 col-xs-7'>" +
-    "<h2>project description</h2>" + "<hr>" +
-    work[0].description +
-    "</div>" +
-    "<div class='col-lg-4 col-xs-4'>" +
-    projectTable +
-    "</div>" +
-    "</div>" +
-    "</div>" +
-    "<div class='row'>"+ 
-    "<div class='related'>" +
-    "<h2>related work</h2>" + "<hr>" +
-    "<div class='related-work'>" + "</div>" +
-    "</div>" +
-    "</div>" +
-    "</div>";
-
-$(".projects").prepend(projectContainer);
-
-
 $(work).each(function (i) {
-   
-    var relatedWork = 
-        "<div class='" + this.id + " related-project-container'>" +
-        "<div class='related-project-img'>" +
-        "<img src='assets/media/" + this.source + "' alt=''>" +
-        "</div>" +
-        "<div class='related-project-info'>" +
-        "<h3>" + this.name + "</h3>" +
-        "<h4>" + this.type + "</h4>" +
-        "</div>" +
-        "</div>" +
-        "</div>";
-        
-    if (this.id === "web") {
-    $(".related-work").append(relatedWork);
-    
-    }
-    return i < 3
+    if (work[i].name === projectPageSelected) {
+
+
+        var projectTable =
+            "<h2>stats</h2>" + "<hr>" +
+            "<table>" + "<tbody>" +
+            "<tr>" + "<td>Client</td>" +
+            "<td>" + this.client + "/td>" +
+            "</tr>" + "<tr>" + "<td>Category</td>" + "<td>" + this.id + "</td>" + "</tr>" + "</tbody>" + "</table>"
+
+
+
+        var projectContainer =
+            "<div class='" + this.id + " project-container'>" +
+            "<div class='row'>" +
+            "<h3>" + this.name + "</h3>" +
+            "<p> by Francisco Deppe</p>" +
+            "</div>" +
+            "<div class='row'>" +
+            "<div class='project-img'>" +
+            "<img src='assets/media/" + this.source + "' alt=''>" +
+            "</div>" +
+            "</div>" +
+            "<div class='row'>" +
+            "<div class='project-info'>" +
+            "<div class='col-lg-7 col-xs-7'>" +
+            "<h2>project description</h2>" + "<hr>" +
+            this.description +
+            "</div>" +
+            "<div class='col-lg-4 col-xs-4'>" +
+            projectTable +
+            "</div>" +
+            "</div>" +
+            "</div>" +
+            "<div class='row'>" +
+            "<div class='related'>" +
+            "<h2>related work</h2>" + "<hr>" +
+            "<div class='related-work'>" + "</div>" +
+            "</div>" +
+            "</div>" +
+            "</div>";
+
+        $(".projects").prepend(projectContainer);
+
+
+        $(work).each(function (i) {
+
+            var relatedWork =
+                "<div class='" + this.id + " related-project-container'>" +
+                "<div class='related-project-img'>" +
+                "<img src='assets/media/" + this.source + "' alt=''>" +
+                "</div>" +
+                "<div class='related-project-info'>" +
+                "<h3>" + this.name + "</h3>" +
+                "<h4>" + this.type + "</h4>" +
+                "</div>" +
+                "</div>" +
+                "</div>";
+
+            if (this.id === "web") {
+                $(".related-work").append(relatedWork);
+
+            }
+            return i < 3
+        });
+    };
 });
