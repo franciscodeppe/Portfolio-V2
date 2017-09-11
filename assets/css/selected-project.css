@@ -1,22 +1,11 @@
-body,
-html {
-    color: #444;
-    font-family: 'Cutive Mono', monospace;
-    background: url("../media/concrete_seamless.png");
-    background-repeat: repeat;
-    overflow-x: hidden;
-    height: 100%;
-}
-.nav {
+.project-page {
     position: absolute;
-    height: 100px;
-    width: 100%;
-    background-color: #444;
-}
-
-.row {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    z-index: 5;
+    height: 100%;
+    width: 100vw;
+    right: 100vw;
+    overflow: hidden;
+    background: url("../media/concrete_seamless.png");
 }
 
 hr {
@@ -30,15 +19,14 @@ table {
     width: 100%;
 }
 
-.projects {
+.selected-project {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0px;
-    margin-top: 90px;
 }
 
-.project-container {
+.selected-project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +40,7 @@ table {
     padding: 20px;
 }
 
-.project-img {
+.selected-project-img {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,13 +48,14 @@ table {
     background-color: white;
 }
 
-.project-img>img {
+.selected-project-img>img {
     margin-top: 20px;
     width: 100%;
+    max-width: 500px;
     border-radius: 4px;
 }
 
-.project-info {
+.selected-project-info {
     display: flex;
     justify-content: center;
     text-align: left;

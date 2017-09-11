@@ -5,78 +5,56 @@ var $grid = $('.grid').masonry({
 
 
 var work = [{
-        name: "Armet-Davis",
-        source: "project1-web.png",
-        type: "Web Application",
-        id: "web"
-    }, {
-        name: "AtoZ",
-        source: "project2-logo.gif",
-        type: "Logo Design",
-        id: "logo"
-    }, {
-        name: "Giphy",
-        source: "project3-web.png",
-        type: "Web Application",
-        id: "web"
-    },
-    {
-        name: "Hangman",
-        source: "project4-web.png",
-        type: "Web Application",
-        id: "web"
-    }, {
-        name: "Social Models",
-        source: "project5-logo.jpg",
-        type: "Logo Design",
-        id: "logo"
-    }, {
-        name: "The Latest",
-        source: "project6-web.png",
-        type: "Web Application",
-        id: "web"
-    }, {
-        name: "Trivia Game",
-        source: "project7-web.png",
-        type: "Web Application",
-        id: "web"
-    }, {
-        name: "Armet-Davis2",
-        source: "project1-web.png",
-        type: "Web Application",
-        id: "web"
-    }, {
-        name: "AtoZ2",
-        source: "project2-logo.gif",
-        type: "Logo Design",
-        id: "logo"
-    }, {
-        name: "Giphy2",
-        source: "project3-web.png",
-        type: "Web Application",
-        id: "web"
-    },
-    {
-        name: "Hangman2",
-        source: "project4-web.png",
-        type: "Web Application",
-        id: "web"
-    }, {
-        name: "Social Models2",
-        source: "project5-logo.jpg",
-        type: "Logo Design",
-        id: "logo"
-    }, {
-        name: "The Latest2",
-        source: "project6-web.png",
-        type: "Web Application",
-        id: "web"
-    }, {
-        name: "Trivia Game2",
-        source: "project7-web.png",
-        type: "Web Application",
-        id: "web"
-    },
+    name: "Armet-Davis",
+    source: "project1-web.png",
+    type: "Web Application",
+    id: "web",
+    client: "freelance",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
+}, {
+    name: "AtoZ",
+    source: "project2-logo.gif",
+    type: "Logo Design",
+    id: "logo",
+    client: "freelance",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
+}, {
+    name: "Giphy",
+    source: "project3-web.png",
+    type: "Web Application",
+    id: "web",
+    client: "freelance",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
+},
+{
+    name: "Hangman",
+    source: "project4-web.png",
+    type: "Web Application",
+    id: "web",
+    client: "freelance",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
+}, {
+    name: "Social Models",
+    source: "project5-logo.jpg",
+    type: "Logo Design",
+    id: "logo",
+    client: "freelance",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
+}, {
+    name: "The Latest",
+    source: "project6-web.png",
+    type: "Web Application",
+    id: "web",
+    client: "freelance",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
+}, {
+    name: "Trivia Game",
+    source: "project7-web.png",
+    type: "Web Application",
+    id: "web",
+    client: "freelance",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
+}
 ]
 
 function projectPopulate(i) {
@@ -103,7 +81,7 @@ $(work).each(function (i) {
 
 // Search through work ----------------------
 $(document).ready(function (event) {
-    
+
     $("#web-design-link").on("click", function () {
         // remove current items
         $(".grid").fadeOut(500, function () {
@@ -166,15 +144,15 @@ $(document).ready(function (event) {
 
     $("#about-link").click(function (event) {
         $(".about").animate({
-            "margin-left": "0px",
+            "left": "0px",
 
         }, 500)
         $(".about").css("overflow", "visible")
     });
 
-    $("#back").click(function (event) {
+    $(".back").click(function (event) {
         $(".about").animate({
-            "margin-left": "100vw",
+            "left": "100vw",
         }, 500)
         $(".about").css("overflow", "hidden")
     });
@@ -205,9 +183,114 @@ $(document).ready(function (event) {
         $(this).find("div.more-info").animate({
             "height": "0px",
         }, 400)
-    });   
+    });
+    // Project Select ----------------------
+
+    function selectedProject(i) {
+        
+
+        var projectTable =
+            "<h2>stats</h2>" + "<hr>" +
+            "<table>" + "<tbody>" +
+            "<tr>" + "<td>Client</td>" +
+            "<td>" + work[i].client + "</td>" +
+            "</tr>" + "<tr>" + "<td>Category</td>" + "<td>" + work[i].id + "</td>" + "</tr>" + "</tbody>" + "</table>"
+
+
+
+        var projectShow =
+            "<div class='" + work[i].id + " selected-project-container'>" +
+            "<div class='row'>" +
+            "<h3>" + work[i].name + "</h3>" +
+            "<p> by Francisco Deppe</p>" +
+            "</div>" +
+            "<div class='row'>" +
+            "<div class='selected-project-img'>" +
+            "<img src='assets/media/" + work[i].source + "' alt=''>" +
+            "</div>" +
+            "</div>" +
+            "<div class='row'>" +
+            "<div class='selected-project-info'>" +
+            "<div class='col-lg-7 col-xs-7'>" +
+            "<h2>project description</h2>" + "<hr>" +
+            work[i].description +
+            "</div>" +
+            "<div class='col-lg-4 col-xs-4'>" +
+            projectTable +
+            "</div>" +
+            "</div>" +
+            "</div>" +
+            "<div class='row'>" + work[i].client +
+            "<div class='related'>" + work[i].type +
+            "<h2>related work</h2>" + "<hr>" +
+            "<div class='related-work'>" + "</div>" +
+            "</div>" +
+            "</div>" +
+            "</div>";
+
+        $(".selected-project").html("");
+
+        $(".selected-project").append(projectShow);
+
+    }
+
+    $(document).on("click", ".more-info", function () {
+
+        var id = $(this).attr("id")
+        $(work).each(function (i) {
+            if (id === work[i].name) {
+                selectedProject(i)
+
+                var type = work[i].type
+
+                $(work).each(function (i) {
+
+                    var relatedWork =
+                        "<a href='#'><div class='" + work[i].id + " related-project-container'>" +
+                        "<div class='related-project-img'>" +
+                        "<img src='assets/media/" + work[i].source + "' alt=''>" +
+                        "</div>" +
+                        "<div class='related-project-info'>" +
+                        "<h3>" + work[i].name + "</h3>" +
+                        "<h4>" + work[i].type + "</h4>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div></a>";
+
+                    console.log(type)
+
+                    if (work[i].type === type) {
+                        $(".related-work").append(relatedWork);
+                        return i < 3
+
+                    } else {
+                        console.log(false)
+                        console.log(work[i].type)
+                    }
+                    
+                });
+            }
+        })
+
+
+        $(".project-page").stop().animate({
+            "right": "0px",
+
+        }, 500)
+        $(".project-page").css("overflow", "visible")
+
+        $(".back").click(function (event) {
+            $(".project-page").animate({
+                "right": "100vw",
+            }, 500)
+            $(".project-page").css("overflow", "hidden")
+        });
+
+    })
 })
-var projectPageSelected;
-$(document).on("click", ".more-info", function() {
-    projectPageSelectedId = $(this).attr("id")
-})
+
+
+
+
+
+
