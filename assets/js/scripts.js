@@ -220,8 +220,8 @@ $(document).ready(function (event) {
             "</div>" +
             "</div>" +
             "</div>" +
-            "<div class='row'>" + work[i].client +
-            "<div class='related'>" + work[i].type +
+            "<div class='row'>" +
+            "<div class='related'>" +
             "<h2>related work</h2>" + "<hr>" +
             "<div class='related-work'>" + "</div>" +
             "</div>" +
