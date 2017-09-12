@@ -24,6 +24,7 @@ table {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0px;
+    /* background-color: rgba(255, 255, 255, 0.88); */
 }
 
 .selected-project-container {
@@ -38,6 +39,9 @@ table {
     color: #444;
     border-radius: 2px;
     padding: 20px;
+}
+.selected-project-container>row {
+    background-color: rgba(255, 255, 255, 0.88);;
 }
 
 .selected-project-img {
@@ -61,7 +65,6 @@ table {
     text-align: left;
     height: 30%;
     width: 100%;
-    background-color: white;
 }
 
 .related {

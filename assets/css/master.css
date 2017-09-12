@@ -6,11 +6,13 @@ body,
 html {
   color: white;
   font-family: 'Quicksand', sans-serif;
-
   background: url("../media/background.png");
   background-repeat: repeat;
   overflow-x: hidden;
   height: 100%;
+}
+a:hover {
+  text-decoration: none;
 }
 p {
   font-family: 'Lato', sans-serif;
