@@ -9,21 +9,21 @@ var work = [{
     source: "project1-web.png",
     type: "Web Application",
     id: "web",
-    client: "freelance",
+    client: "Freelance",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
 }, {
     name: "AtoZ",
     source: "project2-logo.gif",
     type: "Logo Design",
     id: "logo",
-    client: "freelance",
+    client: "Freelance",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
 }, {
     name: "Giphy",
     source: "project3-web.png",
     type: "Web Application",
     id: "web",
-    client: "freelance",
+    client: "Personal",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
 },
 {
@@ -31,28 +31,28 @@ var work = [{
     source: "project4-web.png",
     type: "Web Application",
     id: "web",
-    client: "freelance",
+    client: "Personal",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
 }, {
     name: "Social Models",
     source: "project5-logo.jpg",
     type: "Logo Design",
     id: "logo",
-    client: "freelance",
+    client: "Freelance",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
 }, {
     name: "The Latest",
     source: "project6-web.png",
     type: "Web Application",
     id: "web",
-    client: "freelance",
+    client: "Project",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
 }, {
     name: "Trivia Game",
     source: "project7-web.png",
     type: "Web Application",
     id: "web",
-    client: "freelance",
+    client: "Personal",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cumque, earum blanditiis incidunt minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae aut ipsa non ex ullam atque suscipit ut dignissimos magnam!"
 }
 ]
@@ -191,10 +191,11 @@ $(document).ready(function (event) {
 
         var projectTable =
             "<h2>stats</h2>" + "<hr>" +
-            "<table>" + "<tbody>" +
-            "<tr>" + "<td>Client</td>" +
-            "<td>" + work[i].client + "</td>" +
-            "</tr>" + "<tr>" + "<td>Category</td>" + "<td>" + work[i].id + "</td>" + "</tr>" + "</tbody>" + "</table>"
+            "<table><tbody>" +
+            "<tr><td>Client:</td>" +
+            "<td>Category:</td>" +
+            "</tr><tr><td>"+ work[i].client+ "</td><td>" + work[i].type + 
+            "</td></tr></tbody></table>"
 
 
 
@@ -212,16 +213,16 @@ $(document).ready(function (event) {
             "<div class='row'>" +
             "<div class='selected-project-info container'>" +
             "<div class='col-lg-7 col-xs-7'>" +
-            "<h2>project description</h2>" + "<hr>" +
+            "<h2>project description</h2><hr><p>" +
             work[i].description +
-            "</div>" +
+            "</p></div>" +
             "<div class='col-lg-4 col-xs-4'>" +
             projectTable +
             "</div>" +
             "</div>" +
             "</div>" +
             "<div class='row'>" +
-            "<div class='related'>" +
+            "<div class='related col-lg-12 col-xs-12'>" +
             "<h2>related work</h2>" + "<hr>" +
             "<div class='related-work'>" + "</div>" +
             "</div>" +
