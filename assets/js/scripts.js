@@ -186,7 +186,7 @@ $(document).ready(function (event) {
     // Project Select ----------------------
     function relatedWork(i) {
         var relatedWork =
-            "<a href='#'><div id='" + work[i].name + "' class='" + work[i].id + " related-project-container'>" +
+            "<div id='" + work[i].name + "' class='" + work[i].id + " related-project-container'>" +
             "<div class='related-project-img'>" +
             "<img src='assets/media/" + work[i].source + "' alt=''>" +
             "</div>" +
@@ -195,11 +195,12 @@ $(document).ready(function (event) {
             "<h4>" + work[i].type + "</h4>" +
             "</div>" +
             "</div>" +
-            "</div></a>";
+            "</div>";
 
         $(".related-work").append(relatedWork);
         return i < 3
     }
+
     function selectedProject(i) {
 
 
@@ -242,11 +243,10 @@ $(document).ready(function (event) {
             "</div>" +
             "</div>" +
             "</div>";
-
-        $(".selected-project").html("");
-
-        $(".selected-project").append(projectShow);
         
+            $(".selected-project").html("");
+        $(".selected-project").append(projectShow);
+
         var type = work[i].type
         var name = work[i].name
 
@@ -254,15 +254,14 @@ $(document).ready(function (event) {
             if (work[i].type === type && work[i].name !== name) {
                 relatedWork(i)
             }
-            
+
         });
 
     }
 
-    
+
 
     $(document).on("click", ".more-info", function () {
-        $(".related-work").html("");
 
         var id = $(this).attr("id")
 
@@ -273,15 +272,22 @@ $(document).ready(function (event) {
         })
 
         $(document).on("click", ".related-project-container", function () {
-            console.log($(this).attr("id"))
+
             name = $(this).attr("id")
             $(work).each(function (i) {
-                
+
                 if (name === work[i].name) {
-                    selectedProject(i)
+                    $(".selected-project").fadeOut(500, function () {
+                        
+                    }).promise().done(function () {
+                        selectedProject(i)
+                        $(".selected-project").fadeIn(1000)
+                    });
+
                 }
             })
         })
+
 
         $(".project-page").stop().animate({
             "right": "0px",
