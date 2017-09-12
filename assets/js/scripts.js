@@ -242,6 +242,7 @@ $(document).ready(function (event) {
                 selectedProject(i)
 
                 var type = work[i].type
+                var name = work[i].name
 
                 $(work).each(function (i) {
 
@@ -259,7 +260,7 @@ $(document).ready(function (event) {
 
                     console.log(type)
 
-                    if (work[i].type === type) {
+                    if (work[i].type === type && work[i].name !== name) {
                         $(".related-work").append(relatedWork);
                         return i < 3
 
