@@ -210,7 +210,7 @@ $(document).ready(function (event) {
             "</div>" +
             "</div>" +
             "<div class='row'>" +
-            "<div class='selected-project-info'>" +
+            "<div class='selected-project-info container'>" +
             "<div class='col-lg-7 col-xs-7'>" +
             "<h2>project description</h2>" + "<hr>" +
             work[i].description +

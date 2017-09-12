@@ -1,13 +1,7 @@
-/* Font Families:
-font-family: 'Monoton', cursive;
-font-family: 'Rokkitt', serif;
-font-family: 'Sanchez', serif;
-font-family: 'Cutive Mono', monospace;
- */
 body,
 html {
   color: #444;
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Oswald', sans-serif;
   background: url("../media/concrete_seamless.png");
   background-repeat: repeat;
   overflow-x: hidden;
