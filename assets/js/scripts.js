@@ -11,6 +11,14 @@ var work = [{
         id: "web",
         client: "Armet Davis Newlove & Associates",
         description: "Armet Davis Newlove needed an entire website overhaul. There previous website had not be touhced since the late 90's and so I took it upon myself to give them a fresh new look that also appealed to their historical roots of design. I selected a color scheme I thought fit for the architecture firm who's history and aesthetic can be traced to the 60's. I wanted to give them a signficant landing page as well which showcased some of their more popular and well known work. The website also features a fully functional file access application with authentication for Administrators, Architects as well as the Firm's Clients. It served to help facilitate the document access their clients in an intuitive web-app design.  <br> Languages used: HTML, CSS, JS"
+    },
+    {
+        name: "Eye",
+        source: "creative/Image 5.png",
+        type: "Art",
+        id: "creative",
+        client: "Personal",
+        description: ""
     }, {
         name: "AtoZ",
         source: "project2-logo.gif",
@@ -32,7 +40,29 @@ var work = [{
         type: "Web Application",
         id: "web",
         client: "Personal",
-        description: "A simple project for futher practice of DOM manipulation and javascript game theory. Simply an array of objects which contained words and clues to what needed to be guessed. Feautres a yeyup events to track what keys are being pressed as well as some ajax dom manipulation to display the pressed letter in its occupied space.<br> Languages used: HTML, CSS, JS" 
+        description: "A simple project for futher practice of DOM manipulation and javascript game theory. Simply an array of objects which contained words and clues to what needed to be guessed. Feautres a yeyup events to track what keys are being pressed as well as some ajax dom manipulation to display the pressed letter in its occupied space.<br> Languages used: HTML, CSS, JS"
+    },
+    {
+        name: "Noise",
+        source: "creative/affinity2.jpg",
+        type: "Art",
+        id: "creative",
+        client: "Personal",
+        description: ""
+    }, {
+        name: "Sketch Art",
+        source: "creative/Image 2.png",
+        type: "Art",
+        id: "creative",
+        client: "",
+        description: ""
+    }, {
+        name: "The Thing",
+        source: "creative/Image 3.png",
+        type: "Art",
+        id: "creative",
+        client: "",
+        description: ""
     }, {
         name: "Social Models",
         source: "project5-logo.jpg",
@@ -236,8 +266,8 @@ $(document).ready(function (event) {
             "</div>" +
             "</div>" +
             "</div>";
-        
-            $(".selected-project").html("");
+
+        $(".selected-project").html("");
         $(".selected-project").append(projectShow);
 
         var type = work[i].type
@@ -271,7 +301,7 @@ $(document).ready(function (event) {
 
                 if (name === work[i].name) {
                     $(".selected-project").fadeOut(500, function () {
-                        
+
                     }).promise().done(function () {
                         selectedProject(i)
                         $(".selected-project").fadeIn(1000)
