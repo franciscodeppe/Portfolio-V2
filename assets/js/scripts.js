@@ -79,6 +79,18 @@ var work = [{
         description: "The Latest was a web application aimed at bringing all of your news sources to one place. I served as the lead Front-End and UI/UX developer. I created the layout and design for the project and implement a back-end to tie into that design."
     }
 ]
+// Background-Image ---------
+function background() {
+    var backgrounds = ["background-1.jpg", "background-2.jpg", "background-3.jpg", "background-4.jpg", "background-5.jpg"]
+
+
+
+    $(".item").each(function () {
+        var item = backgrounds[Math.floor(Math.random() * backgrounds.length)]
+        $(this).css(
+            "background-image", "url(assets/media/Project-Backgrounds/" + item + ")");
+    })
+}
 
 function projectPopulate(i) {
     var projectContainer = "<div class='item " + work[i].id + "'>" +
@@ -100,7 +112,7 @@ function projectPopulate(i) {
 $(work).each(function (i) {
     projectPopulate(i)
 });
-
+background()
 
 // Search through work ----------------------
 $(document).ready(function (event) {
@@ -113,6 +125,7 @@ $(document).ready(function (event) {
             $(work).each(function (i) {
                 if (this.id === "web") {
                     projectPopulate(i)
+                    background()
 
                 }
             })
@@ -127,6 +140,7 @@ $(document).ready(function (event) {
             $(work).each(function (i) {
                 if (this.id === "logo") {
                     projectPopulate(i)
+                    background()
                 }
             })
         })
@@ -139,6 +153,7 @@ $(document).ready(function (event) {
             $(work).each(function (i) {
                 if (this.id === "creative") {
                     projectPopulate(i)
+                    background()
 
                 }
             })
@@ -151,12 +166,15 @@ $(document).ready(function (event) {
 
             $(work).each(function (i) {
                 projectPopulate(i)
+                background()
 
             })
         });
         $(".grid").fadeIn(300)
 
     })
+    
+
 
     // page transitions
 
@@ -291,6 +309,7 @@ $(document).ready(function (event) {
         $(work).each(function (i) {
             if (id === work[i].name) {
                 selectedProject(i)
+                background()
             }
         })
 
@@ -304,6 +323,7 @@ $(document).ready(function (event) {
 
                     }).promise().done(function () {
                         selectedProject(i)
+                        background()
                         $(".selected-project").fadeIn(1000)
                     });
 
