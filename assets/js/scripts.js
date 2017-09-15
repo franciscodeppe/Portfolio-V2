@@ -5,6 +5,13 @@ var $grid = $('.grid').masonry({
 
 
 var work = [{
+        name: "Pool-Side",
+        source: "/creative/peice4.png",
+        type: "Art",
+        id: "art",
+        client: "Personal Project",
+        description: "Art Work"
+    }, {
         name: "Armet-Davis",
         source: "project1-web.png",
         type: "Web Application",
@@ -18,7 +25,7 @@ var work = [{
         type: "Art",
         id: "creative",
         client: "Personal",
-        description: ""
+        description: "Art Work"
     }, {
         name: "AtoZ",
         source: "project2-logo.gif",
@@ -48,21 +55,21 @@ var work = [{
         type: "Art",
         id: "creative",
         client: "Personal",
-        description: ""
+        description: "Art Work"
     }, {
         name: "Sketch Art",
         source: "creative/Image 2.png",
         type: "Art",
         id: "creative",
         client: "",
-        description: ""
+        description: "Art Work"
     }, {
         name: "The Thing",
         source: "creative/Image 3.png",
         type: "Art",
         id: "creative",
         client: "",
-        description: ""
+        description: "Art Work"
     }, {
         name: "Social Models",
         source: "project5-logo.jpg",
@@ -80,12 +87,12 @@ var work = [{
     }
 ]
 // Background-Image ---------
-function background() {
+function background(item) {
     var backgrounds = ["background-1.jpg", "background-2.jpg", "background-3.jpg", "background-4.jpg", "background-5.jpg"]
 
-
-
-    $(".item").each(function () {
+    
+    
+    $(item).each(function () {
         var item = backgrounds[Math.floor(Math.random() * backgrounds.length)]
         $(this).css(
             "background-image", "url(assets/media/Project-Backgrounds/" + item + ")");
@@ -112,7 +119,7 @@ function projectPopulate(i) {
 $(work).each(function (i) {
     projectPopulate(i)
 });
-background()
+background(".item")
 
 // Search through work ----------------------
 $(document).ready(function (event) {
@@ -125,7 +132,7 @@ $(document).ready(function (event) {
             $(work).each(function (i) {
                 if (this.id === "web") {
                     projectPopulate(i)
-                    background()
+                    background(".item")
 
                 }
             })
@@ -140,7 +147,7 @@ $(document).ready(function (event) {
             $(work).each(function (i) {
                 if (this.id === "logo") {
                     projectPopulate(i)
-                    background()
+                    background(".item")
                 }
             })
         })
@@ -153,7 +160,7 @@ $(document).ready(function (event) {
             $(work).each(function (i) {
                 if (this.id === "creative") {
                     projectPopulate(i)
-                    background()
+                    background(".item")
 
                 }
             })
@@ -166,14 +173,14 @@ $(document).ready(function (event) {
 
             $(work).each(function (i) {
                 projectPopulate(i)
-                background()
+                background(".item")
 
             })
         });
         $(".grid").fadeIn(300)
 
     })
-    
+
 
 
     // page transitions
@@ -240,6 +247,8 @@ $(document).ready(function (event) {
 
         $(".related-work").append(relatedWork);
         return i < 3
+
+       
     }
 
     function selectedProject(i) {
@@ -294,6 +303,7 @@ $(document).ready(function (event) {
         $(work).each(function (i) {
             if (work[i].type === type && work[i].name !== name) {
                 relatedWork(i)
+                background(".related-project-img")
             }
 
         });

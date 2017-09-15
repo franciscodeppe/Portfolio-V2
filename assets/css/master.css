@@ -52,7 +52,7 @@ a>hr {
   min-width: 80px;
 }
 .right-column {
-  
+  min-height: 92vh;
   overflow: -webkit-paged-x;
 }
 .icons {
@@ -91,4 +91,11 @@ i:hover {
   border: 1px solid white;
   background-color: #444;
   color: white;
+}
+
+.col-lg-7 {
+  min-width: 400px;
+}
+.col-lg-4 {
+  min-width: 150px;
 }

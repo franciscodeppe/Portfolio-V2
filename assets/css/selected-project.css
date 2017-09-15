@@ -5,6 +5,7 @@
     width: 100vw;
     right: 100vw;
     overflow: hidden;
+    background: url("../media/background.png")
 }
 
 hr {
@@ -102,6 +103,8 @@ table {
     justify-content: center;
     width: 270px;
     height: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 
