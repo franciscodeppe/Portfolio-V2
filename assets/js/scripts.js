@@ -4,16 +4,9 @@ var $grid = $('.grid').masonry({
 });
 
 
-var work = [{
-        name: "Pool-Side",
-        source: "/creative/peice4.png",
-        type: "Art",
-        id: "art",
-        client: "Personal Project",
-        description: "Art Work"
-    }, {
+var work = [ {
         name: "Armet-Davis",
-        source: "project1-web.png",
+        source: "armet.png",
         type: "Web Application",
         id: "web",
         client: "Armet Davis Newlove & Associates",
@@ -21,29 +14,43 @@ var work = [{
     },
     {
         name: "Eye",
-        source: "creative/Image 5.png",
+        source: "eye.png",
         type: "Art",
         id: "creative",
         client: "Personal",
         description: "Art Work"
     }, {
         name: "AtoZ",
-        source: "project2-logo.gif",
+        source: "atoz.gif",
         type: "Logo Design",
         id: "logo",
         client: "Freelance",
         description: "I had been working on doing some mock brand/logo work and a friend passed by with a request for one she could use as a graphic for a business card or personal blog. Given her initials A. Z. and some direction with style and taste I created this logo making use of negative space and simple shapes."
     }, {
+        name: "Pool-Side",
+        source: "/creative/peice4.png",
+        type: "Art",
+        id: "art",
+        client: "Personal Project",
+        description: "Art Work"
+    },{
         name: "Giphy",
-        source: "project3-web.png",
+        source: "giphy.png",
         type: "Web Application",
         id: "web",
         client: "Personal",
         description: "A personal project which allowed me to practice hooking ino public API's to retreive data and manipulate the dom. Using the Giphy API I was able to create a application which allowed for searches to Giphy website. The search would then append matches to the DOM and allow for pause = resume of the gif. Functionality for a slider to determine how many gifs to show as well as one for rating as added for a more complete application. <br> Languages used: HTML, CSS, JS"
+    },{
+        name: "Stained Glass Season",
+        source: "/creative/stainedglassseason.png",
+        type: "Art",
+        id: "art",
+        client: "Personal Project",
+        description: "Art Work"
     },
     {
         name: "Hangman",
-        source: "project4-web.png",
+        source: "hangman.png",
         type: "Web Application",
         id: "web",
         client: "Personal",
@@ -51,40 +58,76 @@ var work = [{
     },
     {
         name: "Noise",
-        source: "creative/affinity2.jpg",
+        source: "creative/noise.jpg",
         type: "Art",
         id: "creative",
         client: "Personal",
         description: "Art Work"
     }, {
-        name: "Sketch Art",
-        source: "creative/Image 2.png",
+        name: "Dichotomy",
+        source: "creative/dichotomy.png",
         type: "Art",
         id: "creative",
         client: "",
         description: "Art Work"
     }, {
         name: "The Thing",
-        source: "creative/Image 3.png",
+        source: "creative/thing.png",
         type: "Art",
         id: "creative",
         client: "",
         description: "Art Work"
     }, {
         name: "Social Models",
-        source: "project5-logo.jpg",
+        source: "socialmodels.jpg",
         type: "Logo Design",
         id: "logo",
         client: "Social Models",
         description: "A client needed a brand logo for a new web based talent/model agency that was being formed. They asked for a modern, sleek feel and design to go with their pages aesthetic. I assisted in the early design process, supplying some ideas which they based their actual logo off of.<br> Created using Photoshop."
+    },{
+        name: "Oceans - Photoshop",
+        source: "/creative/ocean.png",
+        type: "Art- Photoshop Project",
+        id: "art",
+        client: "Personal Project",
+        description: "Art Work"
     }, {
         name: "The Latest",
-        source: "project6-web.png",
+        source: "latest.png",
         type: "Web Application",
         id: "web",
         client: "Team Project",
         description: "The Latest was a web application aimed at bringing all of your news sources to one place. I served as the lead Front-End and UI/UX developer. I created the layout and design for the project and implement a back-end to tie into that design."
-    }
+    }{
+        name: "Trees - Photoshop Project",
+        source: "/creative/trees.png",
+        type: "Art",
+        id: "art",
+        client: "Personal Project",
+        description: "Art Work"
+    },{
+        name: "Cartoon",
+        source: "/creative/cartoon.png",
+        type: "Art",
+        id: "art",
+        client: "Personal Project",
+        description: "Art Work"
+    },{
+        name: "Geometry",
+        source: "/creative/geometry.png",
+        type: "Art",
+        id: "art",
+        client: "Personal Project",
+        description: "Art Work"
+    },
+    {
+        name: "Face",
+        source: "/creative/face.png",
+        type: "Art",
+        id: "art",
+        client: "Personal Project",
+        description: "Art Work"
+    },
 ]
 // Background-Image ---------
 function background(item) {
