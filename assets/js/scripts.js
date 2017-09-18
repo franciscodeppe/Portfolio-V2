@@ -14,7 +14,7 @@ var work = [ {
     },
     {
         name: "Eye",
-        source: "eye.png",
+        source: "creative/eye.png",
         type: "Art",
         id: "creative",
         client: "Personal",
@@ -28,7 +28,7 @@ var work = [ {
         description: "I had been working on doing some mock brand/logo work and a friend passed by with a request for one she could use as a graphic for a business card or personal blog. Given her initials A. Z. and some direction with style and taste I created this logo making use of negative space and simple shapes."
     }, {
         name: "Pool-Side",
-        source: "/creative/peice4.png",
+        source: "/creative/pool side.png",
         type: "Art",
         id: "art",
         client: "Personal Project",
@@ -86,7 +86,7 @@ var work = [ {
         description: "A client needed a brand logo for a new web based talent/model agency that was being formed. They asked for a modern, sleek feel and design to go with their pages aesthetic. I assisted in the early design process, supplying some ideas which they based their actual logo off of.<br> Created using Photoshop."
     },{
         name: "Oceans - Photoshop",
-        source: "/creative/ocean.png",
+        source: "/creative/ocean.jpg",
         type: "Art- Photoshop Project",
         id: "art",
         client: "Personal Project",
