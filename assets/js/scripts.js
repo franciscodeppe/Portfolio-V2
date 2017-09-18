@@ -277,7 +277,7 @@ $(document).ready(function (event) {
     // Project Select ----------------------
     function relatedWork(i) {
         var relatedWork =
-            "<div id='" + work[i].name + "' class='" + work[i].id + " related-project-container'>" +
+            "<a href='#'> <div id='" + work[i].name + "' class='" + work[i].id + " related-project-container'>" +
             "<div class='related-project-img'>" +
             "<img src='assets/media/" + work[i].source + "' alt=''>" +
             "</div>" +
@@ -286,7 +286,7 @@ $(document).ready(function (event) {
             "<h4>" + work[i].type + "</h4>" +
             "</div>" +
             "</div>" +
-            "</div>";
+            "</div></a>";
 
         $(".related-work").append(relatedWork);
         return i < 3
