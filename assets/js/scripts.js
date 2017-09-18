@@ -127,7 +127,7 @@ var work = [ {
         id: "art",
         client: "Personal Project",
         description: "Art Work"
-    },
+    }
 ]
 // Background-Image ---------
 function background(item) {
