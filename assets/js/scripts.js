@@ -30,7 +30,7 @@ var work = [ {
         name: "Pool-Side",
         source: "/creative/pool side.png",
         type: "Art",
-        id: "art",
+        id: "creative",
         client: "Personal Project",
         description: "Art Work"
     },{
@@ -44,7 +44,7 @@ var work = [ {
         name: "Stained Glass Season",
         source: "/creative/stainedglassseason.png",
         type: "Art",
-        id: "art",
+        id: "creative",
         client: "Personal Project",
         description: "Art Work"
     },
@@ -88,7 +88,7 @@ var work = [ {
         name: "Oceans - Photoshop",
         source: "/creative/ocean.jpg",
         type: "Art- Photoshop Project",
-        id: "art",
+        id: "creative",
         client: "Personal Project",
         description: "Art Work"
     }, {
@@ -102,21 +102,21 @@ var work = [ {
         name: "Trees - Photoshop Project",
         source: "creative/trees.jpg",
         type: "Art",
-        id: "art",
+        id: "creative",
         client: "Personal Project",
         description: "Art Work"
     },{
         name: "Cartoon",
         source: "/creative/cartoon.png",
         type: "Art",
-        id: "art",
+        id: "creative",
         client: "Personal Project",
         description: "Art Work"
     },{
         name: "Geometry",
         source: "/creative/geometry.png",
         type: "Art",
-        id: "art",
+        id: "creative",
         client: "Personal Project",
         description: "Art Work"
     },
@@ -124,7 +124,7 @@ var work = [ {
         name: "Face",
         source: "/creative/face.png",
         type: "Art",
-        id: "art",
+        id: "creative",
         client: "Personal Project",
         description: "Art Work"
     }
