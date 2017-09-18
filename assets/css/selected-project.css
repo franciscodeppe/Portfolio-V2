@@ -49,7 +49,6 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
 }
 
 .selected-project-img>img {
@@ -75,10 +74,10 @@ table {
 }
 
 .related-work {
-    
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 

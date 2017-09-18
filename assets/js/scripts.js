@@ -100,7 +100,7 @@ var work = [ {
         description: "The Latest was a web application aimed at bringing all of your news sources to one place. I served as the lead Front-End and UI/UX developer. I created the layout and design for the project and implement a back-end to tie into that design."
     },{
         name: "Trees - Photoshop Project",
-        source: "/creative/trees.png",
+        source: "creative/trees.jpg",
         type: "Art",
         id: "art",
         client: "Personal Project",

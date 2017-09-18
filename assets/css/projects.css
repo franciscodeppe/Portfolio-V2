@@ -5,6 +5,8 @@
 }
 
 .item {
+  background-repeat: repeat;
+  background-size: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
