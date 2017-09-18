@@ -88,7 +88,7 @@ var work = [{
 ]
 // Background-Image ---------
 function background(item) {
-    var backgrounds = ["background-1.jpg", "background-2.jpg", "background-3.jpg", "background-4.jpg", "background-5.jpg"]
+    var backgrounds = ["background-1.png", "background-2.png", "background-3.png", "background-4.png", "background-5.png"]
 
     
     
