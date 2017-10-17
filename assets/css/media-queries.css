@@ -1,7 +1,31 @@
 /* Small Screen */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    
+    .projects {
+        justify-content: center;
+    }
+    .nav {
+        text-align: center;
+    }
+    .nav>a {
+        margin: 1px;
+    }
+    .nav-personal-info {
+        display: none;
+    }
+    .nav-column {
+        padding-left: 0px;
+    } 
+    a>hr {
+        margin: auto;
+    }
+     /* Selected Projects */
 
+     .selected-project-container {
+        margin: auto;   
+    }
+    .selected-project-info {
+        display: block;
+    }
 
 
 }
@@ -21,7 +45,9 @@
     .nav-column {
         padding-left: 0px;
     }
-
+    a>hr {
+        margin: auto;
+    }
     /* Project */
     .projects {
         justify-content: center;
@@ -46,9 +72,7 @@
     .selected-project-info {
         display: block;
     }
-    a>hr {
-        margin: auto;
-    }
+   
 
 
 
