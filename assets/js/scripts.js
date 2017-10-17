@@ -4,7 +4,16 @@ var $grid = $('.grid').masonry({
 });
 
 
-var work = [ {
+var work = [
+    {
+        name: "P.A.T",
+        source: "/Web/PAT-1.png",
+        type: "Web Application",
+        id: "web",
+        client: "Web Application",
+        description: "Personal Goal Tracker"
+    },
+    {
         name: "Armet-Davis",
         source: "armet.png",
         type: "Web Application",
@@ -27,20 +36,13 @@ var work = [ {
         client: "Freelance",
         description: "I had been working on doing some mock brand/logo work and a friend passed by with a request for one she could use as a graphic for a business card or personal blog. Given her initials A. Z. and some direction with style and taste I created this logo making use of negative space and simple shapes."
     }, {
-        name: "Pool-Side",
-        source: "/creative/pool side.png",
-        type: "Art",
-        id: "creative",
-        client: "Personal Project",
-        description: "Art Work"
-    },{
         name: "Giphy",
         source: "giphy.png",
         type: "Web Application",
         id: "web",
         client: "Personal",
         description: "A personal project which allowed me to practice hooking ino public API's to retreive data and manipulate the dom. Using the Giphy API I was able to create a application which allowed for searches to Giphy website. The search would then append matches to the DOM and allow for pause = resume of the gif. Functionality for a slider to determine how many gifs to show as well as one for rating as added for a more complete application. <br> Languages used: HTML, CSS, JS"
-    },{
+    }, {
         name: "Stained Glass Season",
         source: "/creative/stainedglassseason.png",
         type: "Art",
@@ -84,7 +86,7 @@ var work = [ {
         id: "logo",
         client: "Social Models",
         description: "A client needed a brand logo for a new web based talent/model agency that was being formed. They asked for a modern, sleek feel and design to go with their pages aesthetic. I assisted in the early design process, supplying some ideas which they based their actual logo off of.<br> Created using Photoshop."
-    },{
+    }, {
         name: "Oceans - Photoshop",
         source: "/creative/ocean.jpg",
         type: "Art- Photoshop Project",
@@ -98,21 +100,21 @@ var work = [ {
         id: "web",
         client: "Team Project",
         description: "The Latest was a web application aimed at bringing all of your news sources to one place. I served as the lead Front-End and UI/UX developer. I created the layout and design for the project and implement a back-end to tie into that design."
-    },{
+    }, {
         name: "Trees - Photoshop Project",
         source: "creative/trees.jpg",
         type: "Art",
         id: "creative",
         client: "Personal Project",
         description: "Art Work"
-    },{
+    }, {
         name: "Cartoon",
         source: "/creative/cartoon.png",
         type: "Art",
         id: "creative",
         client: "Personal Project",
         description: "Art Work"
-    },{
+    }, {
         name: "Geometry",
         source: "/creative/geometry.png",
         type: "Art",
@@ -133,8 +135,8 @@ var work = [ {
 function background(item) {
     var backgrounds = ["background-1.png", "background-2.png", "background-3.png", "background-4.png", "background-5.png"]
 
-    
-    
+
+
     $(item).each(function () {
         var item = backgrounds[Math.floor(Math.random() * backgrounds.length)]
         $(this).css(
@@ -291,7 +293,7 @@ $(document).ready(function (event) {
         $(".related-work").append(relatedWork);
         return i < 3
 
-       
+
     }
 
     function selectedProject(i) {
