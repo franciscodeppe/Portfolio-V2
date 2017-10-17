@@ -4,8 +4,8 @@
     height: 100%;
     width: 100vw;
     right: 100vw;
-    overflow: hidden;
-    background: url("../media/background.png")
+    background: url("../media/background.png");
+    background-repeat: repeat;
 }
 
 hr {

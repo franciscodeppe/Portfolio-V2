@@ -210,6 +210,7 @@ $(document).ready(function (event) {
 
         }, 500)
         $(".about").css("overflow", "visible")
+        $(".projects").css("display", "none")
     });
 
     $(".back").click(function (event) {
@@ -217,6 +218,7 @@ $(document).ready(function (event) {
             "left": "100vw",
         }, 500)
         $(".about").css("overflow", "hidden")
+        $(".projects").css("display", "flex")
     });
 
 
@@ -335,6 +337,7 @@ $(document).ready(function (event) {
             if (id === work[i].name) {
                 selectedProject(i)
                 background()
+                $(".projects").css("display", "none")
             }
         })
 

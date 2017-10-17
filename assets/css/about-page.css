@@ -1,11 +1,10 @@
 .about {
     position: absolute;
     z-index: 5;
-    height: 100%;
     width: 100vw;
     left: 100vw;
-    overflow: hidden;
     background: url("../media/background.png");
+    background-repeat: repeat;
   }
   .bio-paragraph>p {
     font-family: 'Lato', sans-serif;
