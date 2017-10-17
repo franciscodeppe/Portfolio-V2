@@ -7,15 +7,15 @@ var $grid = $('.grid').masonry({
 var work = [
     {
         name: "P.A.T",
-        source: "/Web/PAT-1.png",
+        source: "./Web/PAT-1.png",
         type: "Web Application",
         id: "web",
-        client: "Web Application",
+        client: "Trilogy Education",
         description: "Personal Goal Tracker"
     },
     {
         name: "Armet-Davis",
-        source: "armet.png",
+        source: "./Web/armet.png",
         type: "Web Application",
         id: "web",
         client: "Armet Davis Newlove & Associates",
@@ -30,33 +30,11 @@ var work = [
         description: "Art Work"
     }, {
         name: "AtoZ",
-        source: "atoz.gif",
+        source: "./Logo/atoz.gif",
         type: "Logo Design",
         id: "logo",
         client: "Freelance",
         description: "I had been working on doing some mock brand/logo work and a friend passed by with a request for one she could use as a graphic for a business card or personal blog. Given her initials A. Z. and some direction with style and taste I created this logo making use of negative space and simple shapes."
-    }, {
-        name: "Giphy",
-        source: "giphy.png",
-        type: "Web Application",
-        id: "web",
-        client: "Personal",
-        description: "A personal project which allowed me to practice hooking ino public API's to retreive data and manipulate the dom. Using the Giphy API I was able to create a application which allowed for searches to Giphy website. The search would then append matches to the DOM and allow for pause = resume of the gif. Functionality for a slider to determine how many gifs to show as well as one for rating as added for a more complete application. <br> Languages used: HTML, CSS, JS"
-    }, {
-        name: "Stained Glass Season",
-        source: "/creative/stainedglassseason.png",
-        type: "Art",
-        id: "creative",
-        client: "Personal Project",
-        description: "Art Work"
-    },
-    {
-        name: "Hangman",
-        source: "hangman.png",
-        type: "Web Application",
-        id: "web",
-        client: "Personal",
-        description: "A simple project for futher practice of DOM manipulation and javascript game theory. Simply an array of objects which contained words and clues to what needed to be guessed. Feautres a yeyup events to track what keys are being pressed as well as some ajax dom manipulation to display the pressed letter in its occupied space.<br> Languages used: HTML, CSS, JS"
     },
     {
         name: "Noise",
@@ -66,12 +44,12 @@ var work = [
         client: "Personal",
         description: "Art Work"
     }, {
-        name: "Dichotomy",
-        source: "creative/dichotomy.png",
-        type: "Art",
-        id: "creative",
-        client: "",
-        description: "Art Work"
+        name: "P.A.T Logo",
+        source: "./Logo/PAT.png",
+        type: "Logo Design",
+        id: "logo",
+        client: "Trilogy Education",
+        description: "We wanted to the logo for P.A.T to be as inclusive as possible. Initial mockups included avatars for users but as I started designing the landing page avatar I realized we needed to move away from focusing on a single type of person and rather pick something more open minded...a dog in a zen pose."
     }, {
         name: "The Thing",
         source: "creative/thing.png",
@@ -81,7 +59,7 @@ var work = [
         description: "Art Work"
     }, {
         name: "Social Models",
-        source: "socialmodels.jpg",
+        source: "./Logo/socialmodels.jpg",
         type: "Logo Design",
         id: "logo",
         client: "Social Models",
@@ -92,10 +70,10 @@ var work = [
         type: "Art- Photoshop Project",
         id: "creative",
         client: "Personal Project",
-        description: "Art Work"
+        description: "Art Work - I wanted to take a picture of the ocean and see if I could transform to have an animated look"
     }, {
         name: "The Latest",
-        source: "latest.png",
+        source: "./Web/latest.png",
         type: "Web Application",
         id: "web",
         client: "Team Project",
@@ -122,14 +100,6 @@ var work = [
         client: "Personal Project",
         description: "Art Work"
     },
-    {
-        name: "Face",
-        source: "/creative/face.png",
-        type: "Art",
-        id: "creative",
-        client: "Personal Project",
-        description: "Art Work"
-    }
 ]
 // Background-Image ---------
 function background(item) {
