@@ -46,6 +46,9 @@
     .selected-project-info {
         display: block;
     }
+    a>hr {
+        margin: auto;
+    }
 
 
 
