@@ -7,11 +7,11 @@ var $grid = $('.grid').masonry({
 var work = [
     {
         name: "P.A.T",
-        source: "./Web/PAT-1.png",
+        source: "./Web/PAT-3.png",
         type: "Web Application",
         id: "web",
         client: "Trilogy Education",
-        description: "Personal Goal Tracker"
+        description: "P.A.T (Personal Goal Tracker) : is a web application intended at helping people get over the hurdles they may face when striving to accomplish by giving them a means of seeing the progress they've made so far. <br> Languages Used: React, Node, Express"
     },
     {
         name: "Armet-Davis",
