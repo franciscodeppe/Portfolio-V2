@@ -40,6 +40,7 @@ a>hr {
 }
 
 .logo-title {
+  text-align: center;
   width: 100%;
   font-family: 'Monoton', cursive;
   font-size: 20px;

@@ -292,11 +292,11 @@ $(document).ready(function (event) {
             "</div>" +
             "<div class='row'>" +
             "<div class='selected-project-info container'>" +
-            "<div class='col-lg-7 col-xs-7'>" +
+            "<div class='col-lg-7 col-xs-12'>" +
             "<h2>project description</h2><hr><p>" +
             work[i].description +
             "</p></div>" +
-            "<div class='col-lg-4 col-xs-4'>" +
+            "<div class='col-lg-4 col-xs-12'>" +
             projectTable +
             "</div>" +
             "</div>" +

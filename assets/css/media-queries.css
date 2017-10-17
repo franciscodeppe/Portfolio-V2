@@ -1,0 +1,53 @@
+/* Small Screen */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    
+
+
+
+}
+
+
+/* Mobile */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .nav {
+        text-align: center;
+    }
+    .nav>a {
+        margin: 1px;
+    }
+    .nav-personal-info {
+        display: none;
+    }
+    .nav-column {
+        padding-left: 0px;
+    }
+
+    /* Project */
+    .projects {
+        justify-content: center;
+    }
+    /* About Me */
+    .container {
+        padding: 0px 10px 0px 10px;
+    }
+    .name-pic-div {
+        text-align: center;
+    }
+    .personal-info-table {
+        position: relative;
+        margin: auto;
+        width: auto;
+    }
+    /* Selected Projects */
+
+    .selected-project-container {
+        margin: auto;   
+    }
+    .selected-project-info {
+        display: block;
+    }
+
+
+
+
+}
