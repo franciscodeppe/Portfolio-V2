@@ -8,7 +8,6 @@ html {
   font-family: 'Quicksand', sans-serif;
   background: url("../media/background.png");
   background-repeat: repeat;
-  overflow-x: hidden;
   height: 100%;
 }
 a:hover {
@@ -40,6 +39,7 @@ a>hr {
 }
 
 .logo-title {
+  text-align: center;
   width: 100%;
   font-family: 'Monoton', cursive;
   font-size: 20px;

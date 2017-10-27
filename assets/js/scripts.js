@@ -210,6 +210,7 @@ $(document).ready(function (event) {
 
         }, 500)
         $(".about").css("overflow", "visible")
+        $(".projects").css("display", "none")
     });
 
     $(".back").click(function (event) {
@@ -217,6 +218,7 @@ $(document).ready(function (event) {
             "left": "100vw",
         }, 500)
         $(".about").css("overflow", "hidden")
+        $(".projects").css("display", "flex")
     });
 
 
@@ -292,11 +294,11 @@ $(document).ready(function (event) {
             "</div>" +
             "<div class='row'>" +
             "<div class='selected-project-info container'>" +
-            "<div class='col-lg-7 col-xs-7'>" +
+            "<div class='col-lg-7 col-xs-12'>" +
             "<h2>project description</h2><hr><p>" +
             work[i].description +
             "</p></div>" +
-            "<div class='col-lg-4 col-xs-4'>" +
+            "<div class='col-lg-4 col-xs-12'>" +
             projectTable +
             "</div>" +
             "</div>" +
@@ -335,6 +337,7 @@ $(document).ready(function (event) {
             if (id === work[i].name) {
                 selectedProject(i)
                 background()
+                $(".projects").css("display", "none")
             }
         })
 
